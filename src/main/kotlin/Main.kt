@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     var num1 = readLine()!!.toInt()
     println("Enter second number")
    var num2 =readLine()!!.toInt()
-    println("Choose one of the operation : + , * , -, / ")
+    println("Choose one of the operation : + , * , -, / ,%")
     var operation = readLine()?.get(0)
 
     if(operation == '/' && num2 == 0){
@@ -18,6 +18,7 @@ fun main(args: Array<String>) {
        '+' -> println("Result is "+(num1 + num2))
        '*' -> println("Result is "+(num1 * num2))
        '/' -> println("Result is "+(num1 / num2))
+        '%' -> println("Result is "+(num1 % num2))
    }
 
 }
